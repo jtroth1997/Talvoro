@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Talvoro — discover everyday products in one simple marketplace.">
+  <title>Talvoro — Everything. One place.</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Free UK delivery on selected products <span>•</span> Simple 30-day returns</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Talvoro home"><span class="brand-mark">T</span><span>TALVORO</span></a>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="Search millions of products" aria-label="Search products">
+      <button aria-label="Search" type="submit">⌕</button>
+    </form>
+    <nav class="header-actions" aria-label="Account actions">
+      <button class="icon-button" id="accountButton"><span>♙</span><small>Account</small></button>
+      <button class="icon-button"><span>♡</span><small>Saved</small></button>
+      <button class="basket-button" id="basketButton"><span>Bag</span><b id="basketCount">0</b></button>
+    </nav>
+  </header>
+
+  <nav class="category-nav" aria-label="Product categories">
+    <button class="all-categories">☰ All categories</button>
+    <a href="#tech">Tech</a><a href="#home">Home</a><a href="#garden">Garden</a><a href="#beauty">Beauty</a><a href="#fitness">Fitness</a><a href="#pets">Pets</a><a href="#auto">Motoring</a><a href="#offers">Offers</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">ONE MARKETPLACE. ENDLESS CHOICE.</div>
+        <h1>Whatever you need,<br><em>find it here.</em></h1>
+        <p>From everyday essentials to the things you didn't know you needed. Talvoro brings a world of products into one simple place.</p>
+        <div class="hero-actions"><a class="primary" href="#trending">Shop trending</a><a class="secondary" href="#categories">Browse categories →</a></div>
+        <div class="trust-row"><span>✓ Secure checkout</span><span>✓ Live stock</span><span>✓ Order tracking</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Featured products">
+        <div class="orb"></div>
+        <div class="floating-card card-a"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" alt="Wireless headphones"><span>Audio</span></div>
+        <div class="floating-card card-b"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=85" alt="Watch"><span>Everyday tech</span></div>
+        <div class="floating-card card-c"><img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=85" alt="Home product"><span>Home</span></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Why Talvoro">
+      <article><b>Live availability</b><span>Stock checked and kept up to date.</span></article>
+      <article><b>One simple checkout</b><span>Shop across categories in one place.</span></article>
+      <article><b>Track every order</b><span>Clear updates from checkout to your door.</span></article>
+      <article><b>Protected payments</b><span>Secure payment and straightforward support.</span></article>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading"><div><span class="kicker">EXPLORE</span><h2>Shop by category</h2></div><a href="#">View all →</a></div>
+      <div class="category-grid">
+        <a class="category-card" id="tech" href="#trending"><div class="category-image"><img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80" alt="Technology"></div><b>Tech & electronics</b><span>Shop now →</span></a>
+        <a class="category-card" id="home" href="#trending"><div class="category-image"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Home"></div><b>Home & living</b><span>Shop now →</span></a>
+        <a class="category-card" id="garden" href="#trending"><div class="category-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80" alt="Garden"></div><b>Garden & outdoors</b><span>Shop now →</span></a>
+        <a class="category-card" href="#trending"><div class="category-image"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80" alt="Beauty"></div><b>Beauty & care</b><span>Shop now →</span></a>
+        <a class="category-card" href="#trending"><div class="category-image"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="Fitness"></div><b>Fitness</b><span>Shop now →</span></a>
+        <a class="category-card" id="pets" href="#trending"><div class="category-image"><img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=700&q=80" alt="Pets"></div><b>Pets</b><span>Shop now →</span></a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="trending">
+      <div class="section-heading"><div><span class="kicker">POPULAR RIGHT NOW</span><h2>Trending on Talvoro</h2></div><a href="#">See everything →</a></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="discover-banner">
+      <div><span class="kicker">TALVORO DISCOVER</span><h2>A world of products.<br>One place to find them.</h2><p>We bring together a huge range of products and keep availability and pricing current, so finding what you need feels simple.</p><a class="light-button" href="#trending">Start exploring</a></div>
+      <div class="discover-stat"><strong>∞</strong><span>More choice.<br>Less searching.</span></div>
+    </section>
+
+    <section class="section promise">
+      <span class="kicker">OUR PROMISE</span><h2>Shopping should feel simple.</h2><p>Talvoro is being built around three things: choice, clarity and convenience. Search once, buy securely, and follow your order from one account.</p>
+      <div class="promise-grid"><article><span>01</span><h3>Choice without chaos</h3><p>A broad catalogue organised to help you find the right product quickly.</p></article><article><span>02</span><h3>Clear before you buy</h3><p>Current prices, availability and delivery estimates displayed upfront.</p></article><article><span>03</span><h3>One place afterwards</h3><p>Your orders, tracking and support stay together in your Talvoro account.</p></article></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top"><div><a class="brand footer-brand" href="#"><span class="brand-mark">T</span><span>TALVORO</span></a><p>Everything. One place.</p></div><div><b>Shop</b><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#offers">Offers</a></div><div><b>Help</b><a href="#">Track an order</a><a href="#">Delivery</a><a href="#">Returns</a><a href="#">Contact</a></div><div><b>Talvoro</b><a href="#">About</a><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Talvoro. All rights reserved.</span><span>Secure payments · UK customer support</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
